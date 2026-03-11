@@ -1,17 +1,15 @@
-
-
 <style>
 	.box {
-	  width: 1200px;        
-	  margin: 80px auto 0 auto;
-	  padding: 0px;
-	  text-align: center;
-	}
+  max-width: 1200px;   /* limits max size on big screens */
+  width: 100%;         /* shrink on smaller screens */
+  margin: 80px auto 0 auto;
+  padding: 0px;
+  text-align: center;
+}
 		td {
 			border: 1px solid #ffffff;
 			padding: 12px;
 			text-align: center;
-			
 			}
 
 		th {
@@ -35,17 +33,14 @@
 		table {
 		width: 100%;
 		border-collapse: collapse;
-		margin: 10px auto;
+		margin: 20px auto;
 		
 		color: #333;
-		min-width: 600px;
+		min-width: 600px; /* Ensures table doesn't collapse too much on small screens */
 		}
-</style>		
-	
-        
+</style>	
 
-		
-		
+	
 <div class="box">
 	<h2>List of selected papers</h2>
 	
@@ -54,16 +49,20 @@
 
 			<thead>
 				<tr style="text-align: center;">
+
+				  <tr style="text-align: center;">
 				  <th style="width: 80px;">SR. No.</th>
 				  <th>Title</th>
 				  <th style="width: 90px;">Venue</th>
 				  <th>Task</th>
 				  <th style="width: 70px;">Code</th>
+
+				</tr>
 				  
 				</tr>
-			  </thead>
+			</thead>
 
-			  <tbody>
+			<tbody>
 
 					<tr>
 						<td>1</td>
@@ -580,10 +579,9 @@
 					</tr>
 
 			  </tbody>
+			  
 			
 		</table>
+
 	</div>
-</div>
-
-
-	
+</div>		
